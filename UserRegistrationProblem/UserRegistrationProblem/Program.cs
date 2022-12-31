@@ -33,8 +33,9 @@ namespace UserRegistrationProblem
             string Uppercase = Console.ReadLine();
             userValidation.ValidationUppercase(Uppercase);
 
-
-
+            Console.WriteLine("Enter 1 numeric password");
+            string numericpassword = Console.ReadLine();
+            userValidation.ValidationNumericPassword(numericpassword);
         }
     }
 }
