@@ -6,6 +6,7 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome to User Registration Problems Statement Using REGEX");
             UserValidation userValidation = new UserValidation();
             Console.WriteLine("Enter The First Name: ");
@@ -27,6 +28,11 @@ namespace UserRegistrationProblem
             Console.WriteLine("Enter password 8 characters");
             string password = Console.ReadLine();
             userValidation.ValidationPassword(password);
+
+            Console.WriteLine("Enter password 1 uppercase");
+            string Uppercase = Console.ReadLine();
+            userValidation.ValidationUppercase(Uppercase);
+
 
 
         }
